@@ -349,6 +349,13 @@ const regular: CompanyCardType[] = [
   },
 ]
 
+export async function getStaticProps() {
+  return {
+    title: "Placements | TCET - Training and Placement Cell",
+    description: "Explore the world of placements at Thakur College of Engineering and Technology's Training and Placement Cell. Discover top companies offering placements and their categories, including Super Dream, Dream, and Regular companies.",
+  };
+}
+
 ---
 
 <Layout

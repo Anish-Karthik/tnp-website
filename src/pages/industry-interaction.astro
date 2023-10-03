@@ -93,6 +93,13 @@ const IndustryInteractionData: IndustryInteractionType[] = [
   },
 ];
 
+export async function getStaticProps() {
+  return {
+    title: "Industry Interaction | TCET - Training and Placement Cell",
+    description: "Explore the industry interaction events organized by the Training and Placement Cell at Thakur College of Engineering and Technology. Learn about the collaborations with leading companies like Infosys and Jio, and gain insights into their corporate culture and hiring processes.",
+  }
+}
+
 // console.log(IndustryInteractionData.slice(0, 2));
 ---
 

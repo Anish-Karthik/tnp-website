@@ -4,6 +4,14 @@ import ProfessionalBodies from "../components/Training/ProfessionalBodies/index.
 import TcetOpenSource from "../components/Training/TcetOpenSource/index.astro";
 import HugeEvents from "../components/Training/HugeEvents/index.astro";
 import TrainingHero from "../components/Training/TrainingHero/index.astro";
+
+export async function getStaticProps() {
+  return {
+    title: "About Us - TCET Training and Placement Cell",
+    description: "Learn more about the TCET Training and Placement Cell, its staff, and how to contact them."
+  };
+}
+
 ---
 
 <Layout

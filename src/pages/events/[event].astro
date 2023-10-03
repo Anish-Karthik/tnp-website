@@ -20,6 +20,14 @@ const { event } = Astro.params;
 // console.log("astro props: ", Astro.props );
 const currentEvent = data.find((d) => d.slug === event) as EventType;
 console.log(currentEvent.data)
+
+export async function getStaticProps() {
+  return {
+    title: "TCET Training and Placement Cell - Official Website",
+    description: "Explore the official website of the Training and Placement Cell at Thakur College of Engineering and Technology. Get information on events, attendance, and more.",
+  };
+}
+
 ---
 
 <Layout

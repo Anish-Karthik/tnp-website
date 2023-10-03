@@ -1,5 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+export async function serverSideProps() {
+  return {
+    title: "Guidelines for Campus Placement | TCET Training and Placement Cell",
+    description: "Explore the official guidelines for campus placement at Thakur College of Engineering and Technology's Training and Placement Cell. Learn about eligibility criteria, dress code, and essential instructions for a successful placement process."
+  };
+}
+
 ---
 
 <Layout
@@ -18,8 +26,7 @@ import Layout from "../layouts/Layout.astro";
                 Guidelines for Campus Placement
               </h1>
               <div
-                class="leading-relaxed mb-3 text-justify text-sm md:text-base xl:text-lg text-slate-600 p-2
-               "
+                class="leading-relaxed mb-3 text-justify text-sm md:text-base xl:text-lg text-slate-600 p-2"
               >
                 <ul class="list-disc p-1  lg:px-8 2xl:px-12  space-y-2">
                   <li>

@@ -33,6 +33,14 @@ const allStarPerformers = [
   },
 
 ]
+
+export async function getStaticProps() {
+  return {
+    title: "Placed Students | TCET - Training and Placement Cell",
+    description: "Explore the achievements of TCET's placed students, including Super Star Performers and Year-Wise Star Performers. Find out more about the success stories and download placement registration forms for different batches.",
+  };
+}
+
 ---
 
 <Layout

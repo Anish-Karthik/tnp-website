@@ -24,6 +24,13 @@ const tnpStaff: Array<StaffTNP> = [
     experties: "Assistant Professor"
   },
 ];
+
+export async function getStaticProps() {
+  return {
+    title: 'About Us - TCET Training and Placement Cell',
+    description: 'Learn more about the TCET Training and Placement Cell, its staff, and how to contact them.'
+  };
+}
 ---
 
 <Layout
